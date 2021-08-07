@@ -56,20 +56,32 @@
             //     fr.readAsText(this.files[0]);
             // })
             var fs = require('fs');
-            var text = fs.readFileSync("./mytext.txt", 'utf-8');
+            var text = fs.readFileSync("inputfile.txt", 'utf-8');
             var textByLine = text.split('\n')
-            var dickt;
+            var dict;
+
             textByLine.forEach(element => {
-                dickt.push(element.split('|'));
-            });
+                dict.push(element.split('|'));
+            });     // Makes an array of each search term and the corresponding link.
+
 
 
             search_result = document.getElementById("search-input");
             search_result.addEventListener('keyup', function search(e) {
                 if (e.key == 'Enter') {
-                    find_closest_result
+                    find_closest_result(search_result.value);
                 }
             });
+
+            function find_closest_result(search_text){
+                dict.forEach(element => {
+                    if(element[0].localeCompare(search_text) == 0){
+                        window.location.href = element[1];
+                    }
+                    else if(element[0].localeCompare(search_text) > 0)
+                        break;
+                });
+            }
 
             
             
