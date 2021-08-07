@@ -1,0 +1,18 @@
+2-meter surface air temperature|https://glossary.ametsoc.org/wiki/Air_mass
+cloud|https://glossary.ametsoc.org/wiki/Cloud
+condensation|https://glossary.ametsoc.org/wiki/Condensation
+evaporation|https://glossary.ametsoc.org/wiki/Evaporation
+fog|https://glossary.ametsoc.org/wiki/Fog
+front|https://glossary.ametsoc.org/wiki/Front
+precipitation unit|https://glossary.ametsoc.org/wiki/Instantaneous_unit_hydrograph
+pressure center|https://glossary.ametsoc.org/wiki/Pressure_center
+rain|https://glossary.ametsoc.org/wiki/Rain
+relative humidity|https://glossary.ametsoc.org/wiki/Relative_humidity
+sleet|https://glossary.ametsoc.org/wiki/Sleet
+snowfall|https://glossary.ametsoc.org/wiki/Snowfall
+warm front/cold front|https://glossary.ametsoc.org/wiki/Cold_type_occlusion
+weather chart|https://glossary.ametsoc.org/wiki/Synoptic_chart
+weather station|https://glossary.ametsoc.org/wiki/Weather_station
+wet bulb temperature|https://glossary.ametsoc.org/wiki/Wet-bulb_temperature
+wind speed and direction|https://glossary.ametsoc.org/wiki/Wind_speed
+wmo|https://glossary.ametsoc.org/wiki/Climat_broadcast
