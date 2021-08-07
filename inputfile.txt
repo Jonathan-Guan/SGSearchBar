@@ -1,5 +1,6 @@
 2-meter surface air temperature|https://glossary.ametsoc.org/wiki/Air_mass
 cloud|https://glossary.ametsoc.org/wiki/Cloud
+cold front|https://glossary.ametsoc.org/wiki/Cold_front
 condensation|https://glossary.ametsoc.org/wiki/Condensation
 evaporation|https://glossary.ametsoc.org/wiki/Evaporation
 fog|https://glossary.ametsoc.org/wiki/Fog
@@ -10,7 +11,7 @@ rain|https://glossary.ametsoc.org/wiki/Rain
 relative humidity|https://glossary.ametsoc.org/wiki/Relative_humidity
 sleet|https://glossary.ametsoc.org/wiki/Sleet
 snowfall|https://glossary.ametsoc.org/wiki/Snowfall
-warm front/cold front|https://glossary.ametsoc.org/wiki/Cold_type_occlusion
+warm front|https://glossary.ametsoc.org/wiki/Warm_front
 weather chart|https://glossary.ametsoc.org/wiki/Synoptic_chart
 weather station|https://glossary.ametsoc.org/wiki/Weather_station
 wet bulb temperature|https://glossary.ametsoc.org/wiki/Wet-bulb_temperature
