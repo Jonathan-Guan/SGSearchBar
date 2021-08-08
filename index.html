@@ -23,7 +23,7 @@
             <div class="container-in">
             <div class="search-container">
                 <div class="search-engine">
-                <p class="search-title">Search Bar :)</p>
+                <p class="search-title">Weather Glossary</p>
                 <input
                     type="input"
                     id="search-input"
@@ -37,29 +37,31 @@
             </div>
         </div>
 
-
-        <input type="file" name="inputfile.txt"
-            id="inputfile">
-
         <script>
 
-            
-            //var dickt;
-            // document.getElementById('inputfile')
-            //     .addEventListener('change', function() {
-                
-            //     var fr = new FileReader();
-            //     fr.onload = function(){
-            //         dickt.push(fr.result);
-            //     }
-                
-            //     fr.readAsText(this.files[0]);
-            // })
-            var fs = require('fs');
-            var text = fs.readFileSync("inputfile.txt", 'utf-8');
-            var textByLine = text.split('\n')
-            var dict;
+            var allText;
+            function readTextFile(file)
+            {
+                var rawFile = new XMLHttpRequest();
+                rawFile.open("GET", file, false);
+                rawFile.onreadystatechange = function ()
+                {
+                    if(rawFile.readyState === 4)
+                    {
+                        if(rawFile.status === 200 || rawFile.status == 0)
+                        {
+                            allText = rawFile.responseText;
+                        }
+                    }
+                }
+                rawFile.send(null);
+            }
 
+            readTextFile("/inputfile.txt");
+            console.log(allText);
+            textByLine = allText.split('\n');
+
+            let dict = [];
             textByLine.forEach(element => {
                 dict.push(element.split('|'));
             });     // Makes an array of each search term and the corresponding link.
@@ -74,12 +76,14 @@
             });
 
             function find_closest_result(search_text){
+                search_text = search_text.toLowerCase();
                 dict.forEach(element => {
                     if(element[0].localeCompare(search_text) == 0){
                         window.location.href = element[1];
                     }
-                    else if(element[0].localeCompare(search_text) > 0)
-                        break;
+                    if(element[0].localeCompare(search_text) > 0){
+                        return;
+                    }
                 });
             }
 
